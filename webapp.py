@@ -3,15 +3,15 @@ from flask import Flask, url_for, render_template
 app = Flask(__name__)
 
 
-@app.route("/Page 1")
+@app.route("/page1")
 def render_page1():
     return render_template('page1.html')
 
-@app.route("/Page 2")
+@app.route("/page2")
 def render_page2():
     return render_template('page2.html')
 
-@app.route("/Page 3")
+@app.route("/page3")
 def render_page3():
     return render_template('page3.html')
 
