@@ -13,7 +13,7 @@ def render_response1():
     feet = float(request.args['feet'])
     response=feet * (1/12)
 
-    @app.route("/page2")
+@app.route("/page2")
 def render_page2():
     return render_template('page2.html')
 
