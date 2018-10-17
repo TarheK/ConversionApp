@@ -2,6 +2,9 @@ from flask import Flask, url_for, render_template
 
 app = Flask(__name__)
 
+@app.route("/home")
+def render_home():
+    return render_template('home.html')
 
 @app.route("/page1")
 def render_page1():
