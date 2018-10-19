@@ -25,8 +25,8 @@ def render_page2():
     return render_template('page2.html')
 @app.route("/response2")
 def render_response2():
-    killometers = float(request.args['Killometers'])
-    response=killometers * 1000
+    killometers = float(request.args['Kilometers'])
+    response=kilometers * 1000
     return render_template('response.html', response = response)                       
 
 @app.route("/page3")
