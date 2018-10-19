@@ -33,7 +33,7 @@ def render_response2():
 def render_page3():
     return render_template('page3.html')
 @app.route("/response3")
-def render_response3):
+def render_response3():
     miles float(request.args['miles'])
     response=mile * 5280
     return rendr_template('response.html', response = response)
