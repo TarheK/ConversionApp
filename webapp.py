@@ -20,7 +20,6 @@ def render_response1():
     response=feet * 12
     return rendr_template('response = response)
     
-
 @app.route("/page2")
 def render_page2():
     return render_template('page2.html')
