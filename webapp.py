@@ -35,7 +35,7 @@ def render_page3():
 @app.route("/response3")
 def render_response3():
     miles = float(request.args['Miles'])
-    response=mile * 5280
+    response=miles * 5280
     return render_template('response.html', response = response)
 
     
