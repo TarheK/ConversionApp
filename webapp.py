@@ -8,10 +8,11 @@ def render_home():
 
 @app.route("/page1")
 def render_page1():
-    return render_template('page1.html')
+    return render_template('page1.html, response = response')
 def render_response1():
     feet = float(request.args['feet'])
     response=feet * (1/12)
+    
 
 @app.route("/page2")
 def render_page2():
