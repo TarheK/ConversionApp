@@ -7,7 +7,7 @@ def render_home():
     return render_template('home.html')
 @app.route("/responseh")
 def render_responseh():
-    millimeters = float(request.args['millimeters'])
+    millimeters = float(request.args['Millimeters'])
     response=millimeters * (1/10)
     return render_template('response.html', response = response)
 
@@ -16,7 +16,7 @@ def render_page1():
     return render_template('page1.html')
 @app.route("/response1")
 def render_response1():
-    feet = float(request.args['feet'])
+    feet = float(request.args['Feet'])
     response=feet * 12
     return render_template('response.html', response = response)
     
